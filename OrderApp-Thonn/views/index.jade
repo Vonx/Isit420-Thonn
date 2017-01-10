@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h1= title
+  div.form-group
+    label(for='textBoxStore') Npc ID
+    input.form-control(type='text')#textBoxStore
+  div.form-group
+    label(for='textBoxPerson') Npc Name
+    input.form-control(type='text')#textBoxPerson
+  div.form-group
+    label(for='textBoxItem') Npc Description
+    input.form-control(type='text')#textBoxItem
+  div.form-group
+    label(for='textBoxTime') Npc Value
+    input.form-control(type='text')#textBoxTime
+  div.form-group
+    label(for='textBoxPrice') Npc Question
+    input.form-control(type='text')#textBoxPrice
+  button#submitOneOrder Submit Order
+  button#submitOrders Submit 450 Order(s)
+  pre#status
